@@ -5,7 +5,6 @@ view: now_workforce_analysis {
   dimension: automation_potential {
     type: number
     sql: ${TABLE}.Automation_Potential ;;
-
   }
 
   dimension: channel {
@@ -22,7 +21,6 @@ view: now_workforce_analysis {
     type: string
     map_layer_name: countries
     sql: ${TABLE}.Country ;;
-    drill_fields: [location]
   }
 
   dimension: covid_flag {
@@ -59,19 +57,16 @@ view: now_workforce_analysis {
     type: number
     sql: ${TABLE}.Latitude ;;
   }
-dimension: city {
-  type: string
-  sql: ${TABLE}.location ;;
-}
+
   dimension: location {
     type: location
     sql_latitude: ${latitude} ;;
-    sql_longitude: ${longitude} ;;
+    sql_longitude: ${longitute} ;;
   }
 
-  dimension: longitude {
+  dimension: longitute {
     type: number
-    sql: ${TABLE}.Longitude ;;
+    sql: ${TABLE}.Longitute ;;
   }
 
   dimension: prevention_possibility_score {

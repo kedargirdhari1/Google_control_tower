@@ -61,12 +61,12 @@ view: now_workforce_analysis {
   dimension: location {
     type: location
     sql_latitude: ${latitude} ;;
-    sql_longitude: ${longitute} ;;
+    sql_longitude: ${longitude} ;;
   }
 
-  dimension: longitute {
+  dimension: longitude {
     type: number
-    sql: ${TABLE}.Longitute ;;
+    sql: ${TABLE}.Longitude ;;
   }
 
   dimension: prevention_possibility_score {

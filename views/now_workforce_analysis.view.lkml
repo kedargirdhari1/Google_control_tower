@@ -69,6 +69,11 @@ view: now_workforce_analysis {
     sql: ${TABLE}.Longitude ;;
   }
 
+  dimension: city {
+    type: string
+    sql: ${TABLE}.location ;;
+  }
+
   dimension: prevention_possibility_score {
     type: number
     sql: ${TABLE}.Prevention_Possibility_Score ;;
